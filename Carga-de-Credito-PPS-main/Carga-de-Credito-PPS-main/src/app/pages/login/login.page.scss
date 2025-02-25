@@ -1,0 +1,71 @@
+ion-content {
+  --background: rgb(173, 230, 196); /* Un verde suave de fondo */
+  --background: linear-gradient(
+    325deg,
+    rgba(173, 230, 196, 1) 14%, /* Verde suave */
+    rgba(69, 182, 255, 0.85) 39%, /* Azul celeste translúcido */
+    rgba(0, 123, 255, 1) 68%, /* Azul más fuerte */
+    rgba(0, 123, 255, 1) 68%, 
+    rgba(0, 105, 255, 1) 73% /* Azul oscuro */
+  );
+  overflow: hidden;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+.noFoto {
+  margin-top: 1rem;
+}
+
+.logo {
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.botones {
+  height: 50px;
+  --background: #25701e;
+  color: #fff;
+  width: 80%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  border: 3px groove #fff;
+  border-radius: 10px;
+}
+
+.items {
+  margin-bottom: 10%;
+  --background: #f2f4f8;
+  width: 80%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3rem;
+}
+
+.ionButton {
+  margin-top: 3rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(43, 114, 161);
+  border: 3px groove rgb(255, 255, 255);
+  color: rgb(255, 248, 248);
+  text-shadow: 1px 1px #000;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(20, 56, 13);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.ionButton:hover {
+    background: rgb(24, 26, 122);
+    color: #fff;
+    cursor: pointer;
+}

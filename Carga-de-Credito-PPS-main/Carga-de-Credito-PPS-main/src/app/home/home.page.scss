@@ -1,0 +1,180 @@
+ion-content {
+  --background: rgb(173, 230, 196); /* Un verde suave de fondo */
+  --background: linear-gradient(
+    325deg,
+    rgba(173, 230, 196, 1) 14%, /* Verde suave */
+    rgba(69, 182, 255, 0.85) 39%, /* Azul celeste translúcido */
+    rgba(0, 123, 255, 1) 68%, /* Azul más fuerte */
+    rgba(0, 123, 255, 1) 68%, 
+    rgba(0, 105, 255, 1) 73% /* Azul oscuro */
+  );
+  font-family: fantasy;
+}
+
+.scanner-activo {
+  --background: transparent;
+  --ion-background-color: transparent;
+}
+
+.wrapper {
+  background: rgb(73, 1, 1);
+  border-radius: 15px;
+  border: 3px solid #fff;
+}
+
+.visor {
+  margin-top: 5rem;
+  display: grid;
+  place-content: center;
+}
+
+.centrado {
+  display: grid;
+  place-content: center;
+}
+
+.escanear {
+  display: grid;
+  place-content: center;
+  width: 15rem;
+  height: 4rem;
+  border-radius: 15px; /* Esquinas más suaves */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  color: #ffffff; /* Texto blanco */
+  font-size: 1.7rem;
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+  background: linear-gradient(45deg, rgba(201, 51, 14, 1) 0%, rgba(255, 0, 0, 1) 100%); /* Degradado rojo */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+  margin: 0.5rem; /* Espaciado entre los botones */
+}
+
+.escanear:hover {
+  transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.escanear:active {
+  transform: scale(0.95); /* Efecto al hacer clic */
+  background: #000; /* Fondo negro al presionar */
+  box-shadow: 0 0 12px rgba(255, 255, 255, 1); /* Resplandor blanco */
+}
+
+.escanearSesion {
+  display: grid;
+  place-content: center;
+  width: 15rem;
+  height: 4rem;
+  border-radius: 15px; /* Esquinas más suaves */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  color: #ffffff; /* Texto blanco */
+  font-size: 1.7rem;
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+  background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%); /* Degradado rojo */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+  margin: 0.5rem; /* Espaciado entre los botones */
+}
+
+.escanearSesion:hover {
+  transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.escanearSesion:active {
+  transform: scale(0.95); /* Efecto al hacer clic */
+  background: #000; /* Fondo negro al presionar */
+  box-shadow: 0 0 12px rgba(255, 255, 255, 1); /* Resplandor blanco */
+}
+
+.escanearFondos{
+  display: grid;
+  place-content: center;
+  width: 15rem;
+  height: 4rem;
+  border-radius: 15px; /* Esquinas más suaves */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  color: #ffffff; /* Texto blanco */
+  font-size: 1.7rem;
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+  background: linear-gradient(45deg, rgb(15, 146, 37) 0%,rgb(15, 146, 37) 100%); /* Degradado rojo */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+  margin: 0.5rem; /* Espaciado entre los botones */
+}
+
+.escanearFondos:hover {
+  transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.escanearFondos:active {
+  transform: scale(0.95); /* Efecto al hacer clic */
+  background: #000; /* Fondo negro al presionar */
+  box-shadow: 0 0 12px rgba(255, 255, 255, 1); /* Resplandor blanco */
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  font-size: 2.2rem;
+  font-family: 'Arial', sans-serif;
+  color: #f0f8ff; /* Color más claro para destacar en fondo azul */
+  text-shadow: 2px 2px 5px rgba(0, 0, 50, 0.5); /* Sombra sutil para resaltar el texto */
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+
+.monto {
+  border: none;
+  background: rgb(0, 123, 255);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 123, 255, 1) 0%,
+    rgba(0, 210, 255, 1) 100%
+  );
+  width: 21rem;
+  height: 23rem;
+  font-size: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  border-radius: 15px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.monto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.monto-rojo {
+  background: url('../../assets/escanear.png') no-repeat center center;
+  background-size: cover;
+  opacity: 0.8; /* Ajusta la opacidad para lograr el efecto de transparencia */
+}
+
+.scanner-activo-visor {
+  margin-left: 25px;
+  border: 5px dotted #fff;
+  color: transparent;
+  text-shadow: 3px 3px 3px transparent;
+  background: transparent;
+  background-color: transparent;
+  position: relative;
+}
+
+@keyframes move-bar {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 100%;
+  }
+}

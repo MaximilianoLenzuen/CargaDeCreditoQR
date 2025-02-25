@@ -1,0 +1,82 @@
+<ion-content
+  style="font-family: fantasy"
+  [ngClass]="scanActive?'scanner-activo':''"
+  noscroll
+>
+
+  <!-- *************************** VISOR DE SALDO Y BOTON SCANNER *************************** -->
+  <div class="visor">
+    <h1 class="titulo" *ngIf="!scanActive">SALDO: ${{this.credit}}</h1>
+    <h1 class="titulo" *ngIf="scanActive">Enfoque el código QR</h1>
+    <p
+      class="monto"
+      [ngClass]="{
+        'scanner-activo-visor': scanActive,
+        'monto-rojo': !scanActive}"
+        (click)="startScan()"
+    >
+    </p>
+    <!-- <p>{{this.currentScan}}</p> -->
+  </div>
+  <div class="centrado">
+    <button
+    class="escanearFondos"
+    expand="block"
+    type="button"
+    (click)="restartCredit()"
+    *ngIf="!scanActive"
+  >
+    <ion-text
+      style="
+        color: #fff;
+        text-shadow: 2px 2px 4px #000;
+        font-size: 1.7rem;
+      "
+      >Vaciar fondos</ion-text>
+  </button>
+    <button
+      class="escanear"
+      expand="block"
+      type="button"
+      (click)="stopScan()"
+      *ngIf="scanActive"
+    >
+      <ion-text
+        style="
+          color: #fff;
+          text-shadow: 2px 2px 4px #000;
+          font-size: 1.7rem;
+        "
+        >Volver</ion-text>
+    </button>
+    <button
+    class="escanearSesion"
+    expand="block"
+    type="button"
+    (click)="logoutUser()"
+    *ngIf="!scanActive"
+  >
+    <ion-text
+      style="
+        color: #fff;
+        text-shadow: 2px 2px 4px #000;
+        font-size: 1.7rem;
+      "
+      >Cerrar sesión</ion-text>
+  </button>
+  </div>
+
+  <!-- ******************************* SPINNER *******************************-->
+  <ion-spinner
+    *ngIf="pressedButton"
+    color="secondary"
+    name="lines"
+    style="
+      display: inherit;
+      margin: auto;
+      width: 4cm;
+      height: 4cm;
+      margin-top: 2rem;
+    "
+  ></ion-spinner>
+</ion-content>
